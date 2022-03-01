@@ -64,6 +64,25 @@ input[type="text"],#requestJsonBox textarea{
   max-height: 600px;
   border-radius: 12px;
 }
+/* used prism js and css which can display the code in the form of well formatted theme */
+pre[class*="language-"] {
+    background: transparent;
+    border: 1px solid #254e58;
+}
+
+/* adding a styling for the scroll */
+#prismPre::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;  
+}
+
+#prismPre::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#prismPre::-webkit-scrollbar-thumb {
+  background: #888;
+}
 
 #response-box, #response-box span {
   font-family: "Roboto Mono", "Fira Code", Arial, Helvetica, sans-serif;
